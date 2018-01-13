@@ -1,6 +1,6 @@
-package service;
+package com.crypto.cryptostats.service;
 
-import dto.CoinDTO;
+import com.crypto.cryptostats.dto.CoinDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,6 +1,6 @@
-package repository;
+package com.crypto.cryptostats.repository;
 
-import domain.Coin;
+import com.crypto.cryptostats.domain.Coin;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

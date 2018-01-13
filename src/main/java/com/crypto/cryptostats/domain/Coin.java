@@ -1,4 +1,4 @@
-package domain;
+package com.crypto.cryptostats.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

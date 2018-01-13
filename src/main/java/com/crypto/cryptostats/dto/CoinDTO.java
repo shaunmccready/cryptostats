@@ -1,4 +1,4 @@
-package dto;
+package com.crypto.cryptostats.dto;
 
 public class CoinDTO {
 

@@ -1,17 +1,17 @@
-package controller;
+package com.crypto.cryptostats.controller;
 
-import dto.CoinDTO;
+import com.crypto.cryptostats.dto.CoinDTO;
+import com.crypto.cryptostats.service.CoinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import service.CoinService;
 
 import java.util.List;
 
 @RestController
-//@RequestMapping("/coin")
+@RequestMapping("/coin")
 public class CoinController {
 
 	private CoinService coinService;
@@ -22,16 +22,9 @@ public class CoinController {
 	}
 
 
-//	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-//	public List<CoinDTO> getAllCoins(){
-//		return coinService.getAllCoins();
-//	}
-
-//	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	@RequestMapping("/")
-	public String getAllCoins(){
-
-		return "Hello MOTHER FUCKER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+	@RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public List<CoinDTO> getAllCoins(){
+		return coinService.getAllCoins();
 	}
 
 }
